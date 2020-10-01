@@ -14,12 +14,12 @@ Created using Laravel 8
 ## Dev Installation
 
 1. Clone the repository
-1. Setup mysql database by modifying .env file
+1. Setup mysql database by copying .env.example to .env file modifying database credentials
 1. Generate app encryption key by entering **php artisan key:generate** in terminal
 1. Create database tables by entering **php artisan migrate** in terminal
 1. Create default user by entering **php artisan db:seed** in terminal
 1. Generate passport keys for the API to work by entering **php artisan passport:keys** in terminal
-1. Generate personal passport client for the API to work by entering **php artisan passport:client --personal** in terminal
+1. Generate personal passport client for the API to work by entering **php artisan passport:client --personal** in terminal. Copy generated client id to PASSPORT_PERSONAL_ACCESS_CLIENT_ID in .env file. Copy generated client secret to PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET in .env file. 
 1. Install php dependency by entering **composer install** in terminal
 1. Install javascript dependency by entering **npm install** in terminal
 
