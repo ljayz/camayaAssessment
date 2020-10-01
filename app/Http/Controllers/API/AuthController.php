@@ -17,7 +17,7 @@ class AuthController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function login(Request $request) 
-    {
+    {        
         if (Auth::check()) {
             return response()->json(['message' => 'You are currently logged in']);
         }

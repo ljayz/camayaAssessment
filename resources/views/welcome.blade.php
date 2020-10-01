@@ -19,10 +19,12 @@
                 font-family: 'Nunito';
             }
         </style>
+
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     </head>
     <body class="antialiased">
         <noscript> You need to enable JavaScript to run this app. </noscript>
         <div id="root"></div>
-        <script src="js/app.js"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>

@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/login', 'App\Http\Controllers\API\AuthController@login');
-Route::post('/logout', 'App\Http\Controllers\API\AuthController@logout');
+Route::get('/logout', 'App\Http\Controllers\API\AuthController@logout');
 
-Route::middleware('auth:api')->get('/user', 'App\Http\Controllers\API\UserController@index');
+Route::middleware('auth:api')->get('/user', 'App\Http\Controllers\API\UserController@show');
+Route::middleware('auth:api')->patch('/password', 'App\Http\Controllers\API\UserController@password');

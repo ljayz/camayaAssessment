@@ -6,3 +6,24 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+div > input {
+  border: 1px solid gray;
+}
+
+my-1 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+nav {
+  margin-bottom: 2px;
+}
+
+nav a:after {
+  content: " | ";
+}
+
+nav a:last-child:after {
+  content: "";
+}
